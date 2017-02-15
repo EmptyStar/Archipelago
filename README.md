@@ -42,7 +42,7 @@ In addition to the normal islands, most islands have a "filled" counterpart. The
 Development Components
 ----------------------
 
-Included under [the `dev` folder](https://github.com/EmptyStar/Archipelago/tree/master/dev) are versions of the islands' components that include markers for accurately capturing the components using [WorldEdit](http://wiki.sk89q.com/wiki/WorldEdit). As the folder name suggests, these components are intended for _development_ and aren't meant to be used in actual terrain generation. These are meant to be used if you want to modify a component or create a new component. All of the names of the BO3's are prefixed with `dev_`.
+Included under [the dev folder](https://github.com/EmptyStar/Archipelago/tree/master/dev) are versions of the islands' components that include markers for accurately capturing the components using [WorldEdit](http://wiki.sk89q.com/wiki/WorldEdit). As the folder name suggests, these components are intended for _development_ and aren't meant to be used in actual terrain generation. These are meant to be used if you want to modify a component or create a new component. All of the names of the BO3's are prefixed with `dev_`.
 
 If you want to capture a component using WorldEdit, use the two-point selection tool to set your first point to the _orange_ wool block and your second point to either the _blue_ wool block or the farthest corner opposite the orange wool block in lieu of a blue wool block.
 
@@ -60,4 +60,4 @@ Below are the known issues for this version of Archipelago.
 License and Authors
 -------------------
 
-Created by EmptyStar. License MIT; see [LICENSE.txt](https://github.com/EmptyStar/Archipelago/tree/master/LICENSE.txt) for more info.
+Created by EmptyStar. License MIT; see [LICENSE](https://github.com/EmptyStar/Archipelago/tree/master/LICENSE) for more info.
