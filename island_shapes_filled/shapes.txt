@@ -1,0 +1,50 @@
+2x2
+===
+
+ * (standard)
+
+3x2
+===
+
+ * (standard)
+
+3x3
+===
+
+ * (standard)
+ * L
+ * V
+
+4x2
+===
+
+ * (standard)
+
+4x3
+===
+
+ * (standard)
+ * A
+ * J
+ * JJ
+ * L
+ * LL
+ * V
+
+4x4
+===
+
+ * (standard)
+ * D
+ * J
+ * L
+ * LL
+ * P
+ * S
+ * T
+ * TT
+ * TTT
+ * V
+ * VV
+ * X
+ * Z
