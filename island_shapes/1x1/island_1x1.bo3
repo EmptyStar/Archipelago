@@ -163,7 +163,7 @@ OutsideSourceBlock: placeAnyway
 # WeightedBranch(x,y,z,branchName,rotation,chance[,anotherBranchName,rotation,chance[,...]][MaxChanceOutOf])
 # MaxChanceOutOf - The chance all branches have to spawn out of, assumed to be 100 when left blank
 
-WeightedBranch(-3,0,-4,corner_mini_2,WEST,100,100)
-WeightedBranch(5,0,-3,corner_mini_2,NORTH,100,100)
-WeightedBranch(4,0,5,corner_mini_2,EAST,100,100)
-WeightedBranch(-4,0,4,corner_mini_2,SOUTH,100,100)
+WeightedBranch(-3,0,-4,corner_mini_1,WEST,20,corner_mini_2,WEST,20,corner_mini_3,WEST,30,corner_mini_4,WEST,30,100)
+WeightedBranch(5,0,-3,corner_mini_1,NORTH,20,corner_mini_2,NORTH,20,corner_mini_3,NORTH,30,corner_mini_4,NORTH,30,100)
+WeightedBranch(4,0,5,corner_mini_1,EAST,20,corner_mini_2,EAST,20,corner_mini_3,EAST,30,corner_mini_4,EAST,30,100)
+WeightedBranch(-4,0,4,corner_mini_1,SOUTH,20,corner_mini_2,SOUTH,20,corner_mini_3,SOUTH,30,corner_mini_4,SOUTH,30,100)

@@ -36,13 +36,13 @@ Frequency: 1
 
 # The rarity of the BO3 from 0 to 100. Each spawn attempt has rarity% chance to succeed when using the CustomObject(...) resource.
 # Ignored by Tree(..), Sapling(..) and CustomStructure(..)
-Rarity: 1.5
+Rarity: 100.0
 
 # If you set this to true, the BO3 will be placed with a random rotation.
-RotateRandomly: true
+RotateRandomly: false
 
 # The spawn height of the BO3 - randomY, highestBlock or highestSolidBlock.
-SpawnHeight: randomY
+SpawnHeight: highestBlock
 
 # The offset from the spawn height to spawn this BO3
 # Ex. SpawnHeight = highestSolidBlock, SpawnHeightOffset = 3; This object will spawn 3 blocks above the highest solid block
@@ -65,12 +65,12 @@ ExtrudeThroughBlocks: AIR
 # The height limits for the BO3.
 MinHeight: 0
 
-MaxHeight: 240
+MaxHeight: 256
 
 # Objects can have other objects attacthed to it: branches. Branches can also
 # have branches attached to it, which can also have branches, etc. This is the
 # maximum branch depth for this objects.
-MaxBranchDepth: 1024
+MaxBranchDepth: 10
 
 # When spawned with the UseWorld keyword, this BO3 should NOT spawn in the following biomes.
 # If you writer.write the BO3 name directly in the BiomeConfigs, this will be ignored.
@@ -88,10 +88,10 @@ SourceBlocks: AIR
 
 # The maximum percentage of the BO3 that can be outside the SourceBlock.
 # The BO3 won't be placed on a location with more blocks outside the SourceBlock than this percentage.
-MaxPercentageOutsideSourceBlock: 110
+MaxPercentageOutsideSourceBlock: 100
 
 # What to do when a block is about to be placed outside the SourceBlock? (dontPlace, placeAnyway)
-OutsideSourceBlock: dontPlace
+OutsideSourceBlock: placeAnyway
 
 
 #######################################################################
@@ -106,72 +106,79 @@ OutsideSourceBlock: dontPlace
 # So RandomBlock(0,0,0,CHEST,chest.nbt,50,CHEST,anotherchest.nbt,100) will spawn a chest at
 # the BO3 origin, and give it a 50% chance to have the contents of chest.nbt, or, if that
 # fails, a 100% percent chance to have the contents of anotherchest.nbt.
-Block(-2,2,-2,STONE)
-Block(-2,2,-1,STONE)
-Block(-2,3,-2,DIRT)
-Block(-2,3,-1,STONE)
 Block(-2,3,0,STONE)
-Block(-2,4,-2,GRASS)
-Block(-2,4,-1,DIRT)
-Block(-2,4,0,DIRT)
-Block(-2,5,-1,GRASS)
-Block(-2,5,0,GRASS)
-Block(-1,0,0,STONE)
-Block(-1,0,1,STONE)
-Block(-1,1,-1,STONE)
+Block(-2,4,-1,STONE)
+Block(-2,4,0,STONE)
+Block(-2,5,-1,DIRT)
+Block(-2,5,0,STONE)
+Block(-2,6,-1,GRASS)
+Block(-2,6,0,DIRT)
+Block(-2,7,-2,WOOL:1)
+Block(-2,7,0,GRASS)
 Block(-1,1,0,STONE)
-Block(-1,1,1,STONE)
-Block(-1,2,-2,STONE)
 Block(-1,2,-1,STONE)
 Block(-1,2,0,STONE)
-Block(-1,2,1,STONE)
-Block(-1,3,-2,DIRT)
+Block(-1,3,-2,STONE)
 Block(-1,3,-1,STONE)
 Block(-1,3,0,STONE)
-Block(-1,3,1,DIRT)
-Block(-1,4,-2,DIRT)
-Block(-1,4,-1,DIRT)
-Block(-1,4,0,DIRT)
-Block(-1,4,1,DIRT)
-Block(-1,5,-2,GRASS)
-Block(-1,5,-1,DIRT)
-Block(-1,5,0,DIRT)
-Block(-1,5,1,GRASS)
-Block(-1,6,-1,GRASS)
+Block(-1,4,-2,STONE)
+Block(-1,4,-1,STONE)
+Block(-1,4,0,STONE)
+Block(-1,4,1,STONE)
+Block(-1,5,-2,DIRT)
+Block(-1,5,-1,STONE)
+Block(-1,5,0,STONE)
+Block(-1,5,1,DIRT)
+Block(-1,6,-2,GRASS)
+Block(-1,6,-1,DIRT)
 Block(-1,6,0,DIRT)
+Block(-1,6,1,GRASS)
+Block(-1,7,-1,GRASS)
 Block(-1,7,0,GRASS)
-Block(0,0,-1,STONE)
 Block(0,0,0,STONE)
-Block(0,1,-2,STONE)
 Block(0,1,-1,STONE)
 Block(0,1,0,STONE)
-Block(0,1,1,STONE)
-Block(0,2,-2,DIRT)
 Block(0,2,-1,STONE)
 Block(0,2,0,STONE)
-Block(0,2,1,DIRT)
-Block(0,3,-2,GRASS)
 Block(0,3,-1,STONE)
 Block(0,3,0,STONE)
 Block(0,3,1,STONE)
-Block(0,4,-1,GRASS)
-Block(0,4,0,DIRT)
-Block(0,4,1,DIRT)
-Block(0,5,0,DIRT)
-Block(0,5,1,GRASS)
-Block(0,6,0,GRASS)
-Block(1,1,0,STONE)
-Block(1,2,-1,STONE)
+Block(0,4,-2,STONE)
+Block(0,4,-1,STONE)
+Block(0,4,0,STONE)
+Block(0,4,1,STONE)
+Block(0,5,-2,DIRT)
+Block(0,5,-1,DIRT)
+Block(0,5,0,STONE)
+Block(0,5,1,DIRT)
+Block(0,6,-2,GRASS)
+Block(0,6,-1,GRASS)
+Block(0,6,0,DIRT)
+Block(0,6,1,GRASS)
+Block(0,7,0,GRASS)
 Block(1,2,0,STONE)
-Block(1,2,1,STONE)
 Block(1,3,-1,STONE)
 Block(1,3,0,STONE)
-Block(1,3,1,DIRT)
-Block(1,4,-1,DIRT)
-Block(1,4,0,DIRT)
-Block(1,4,1,GRASS)
-Block(1,5,-1,GRASS)
-Block(1,5,0,GRASS)
+Block(1,4,-1,STONE)
+Block(1,4,0,STONE)
+Block(1,4,1,STONE)
+Block(1,5,-1,DIRT)
+Block(1,5,0,STONE)
+Block(1,5,1,DIRT)
+Block(1,6,-1,GRASS)
+Block(1,6,0,DIRT)
+Block(1,6,1,GRASS)
+Block(1,7,0,GRASS)
+Block(2,0,1,WOOL:11)
+Block(2,3,0,STONE)
+Block(2,4,-1,STONE)
+Block(2,4,0,STONE)
+Block(2,4,1,STONE)
+Block(2,5,-1,DIRT)
+Block(2,5,0,DIRT)
+Block(2,5,1,GRASS)
+Block(2,6,-1,GRASS)
+Block(2,6,0,GRASS)
 
 #######################################################################
 # +-----------------------------------------------------------------+ #

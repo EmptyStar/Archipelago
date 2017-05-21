@@ -28,7 +28,7 @@ The BO3's for these island classes can be found in [the island_classes folder](h
 
 ### Island shapes
 
-Each island is defined by its size -- approximately its grid size in chunks -- and its shape. The smallest size is 1x1, and the largest is 4x4. Each of these islands is configured to rotate randomly, and the larger islands (3x3 and 4x4) have various shapes that give them more natural variety.
+Each island is defined by its size -- approximately its grid size in chunks -- and its shape. The smallest size is 1x1, and the largest is 4x4. Each of these islands is configured to rotate randomly, and the larger islands (3x3, 4x3, and 4x4) have various shapes that give them more natural variety.
 
 Each shaped island is denoted with a capital letter that roughly mimics the island's shape. For instance, a `3x3_L` island is an island that is three square chunks in size (48 square blocks) and is shaped like the letter 'L'. Likewise a `4x4_T` island is four square chunks (64 square blocks) and is shaped like the letter 'T'. Note that the lettering system isn't an exact science and only serves as a simplistic approximation of the island's shape.
 
